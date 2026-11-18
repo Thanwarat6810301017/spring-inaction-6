@@ -33,6 +33,13 @@
             th:errors="*{deliveryName}">Name Error</span>
       <br/>
 
+      <label for="deliveryName">NickName: </label>
+      <input type="text" th:field="*{deliveryNickName}"/>
+      <span class="validationError"
+            th:if="${#fields.hasErrors('deliveryNickName')}"
+            th:errors="*{deliveryName}">NickName Error</span>
+      <br/>
+
       <label for="deliveryStreet">Street address: </label>
       <input type="text" th:field="*{deliveryStreet}"/>
       <span class="validationError"
